@@ -1,0 +1,22 @@
+\documentclass{article}
+\title{Packages}
+\date{1/23/2020}
+\author{Carl Schader}
+
+\usepackage{graphicx}
+
+\begin{document}
+	\maketitle
+	\pagenumbering{gobble}
+
+	\newpage
+	\section{Captioned Images / Figures}
+	\begin{figure}[h!] % The [h!] is the float value telling where to put the figure. h here, t top, b bottom, p page (on extra page), and ! override (will force the float value location.) 
+	% This environment takes care of numbering and positioning of figures. Requires graphicx package.
+		\includegraphics[width=\linewidth]{kitten.jpg} % width is an option which in this case is just set to the width of the page. The other option is a path to the image.
+		\caption{A Kiki} % Text shown below the image
+		\label{fig:kitten} % This is invisible to the user but is useful for refering to this figure later in our document.
+	\end{figure}
+
+
+\end{document}

@@ -1,0 +1,53 @@
+\documentclass{article}
+\title{Packages}
+\date{1/23/2020}
+\author{Carl Schader}
+
+\usepackage{amsmath}
+
+\begin{document}
+	\maketitle
+	\pagenumbering{gobble}
+
+	\section{Inline Math} % Use $equation$ to do inline equations.
+	The formula $F = ma$ is an inline equation.
+
+	\section{Equation and Align Environments}
+	This equation uses the equation environment:
+	\begin{equation*}
+		y = mx + b
+	\end{equation*}
+	These equations uses the align environment:
+	\begin{align*} % align will align equations at the &s automatically. The * is for the amsmath package.
+		3x - 2x &= 15\\ % Seperate equations must be seperated by \\ (linebreak).
+		x &= 15
+	\end{align*}
+
+	\section{Common Math Features}
+	\begin{align*}
+		f(x) &= x^2\\
+		g(x) &= \frac{1}{x}\\
+		F(x) &= \int^a_b \frac{1}{3}x^3\\
+		h(x) &= \frac{1}{\sqrt{x}}\\
+		h(x) &= \left(\frac{1}{\sqrt{x}}\right) %\left and \right make paranthesis or brackets scale with the objects inside of them.
+	\end{align*}
+
+	\section{Matrices} % matrix environment must be nested inside a math environment.
+	\begin{align*}
+		\begin{matrix} % &s in align and equation envs make matrices space correctly. White space (as far as I can tell) don't matter here.
+			1&0&0\\
+			0&1&0\\
+			0&0&1
+		\end{matrix}
+	\end{align*}
+
+	\begin{equation*}
+		\left[
+		\begin{matrix}
+				1 & 0 & 0\\
+				0 & 1 & 0\\
+				0 & 0 & 1
+		\end{matrix}
+		\right]
+	\end{equation*}
+\end{document}

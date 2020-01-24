@@ -1,0 +1,28 @@
+\documentclass{article}
+\title{Packages}
+\date{1/23/2020}
+\author{Carl Schader}
+
+\usepackage{amsmath} % math library that doesn't use numbering
+
+\begin{document}
+	\maketitle
+	\pagenumbering{gobble}
+
+	\section{With Numbering}
+	\begin{equation} % equation is an environment type that allows for prettier math and numbers each equation
+		f(x) = x^2
+	\end{equation}
+	\begin{equation}
+		g(y) = 3y
+	\end{equation}
+
+	\section{Without Numbering (From amsmath Package)}
+	\begin{equation*} % this environment comes with amsmath and doesn't include numbered equations
+		f(x) = x^2
+	\end{equation*}
+	\begin{equation*}
+		g(y) = 3y
+	\end{equation*}
+
+\end{document}

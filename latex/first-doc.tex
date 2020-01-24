@@ -1,0 +1,14 @@
+% Document preamble
+\documentclass{article}
+\title{My First Document} % This defines the name of the title page
+\date{1/23/2020}
+\author{Carl Schader}
+
+% One document environment
+\begin{document}
+	\pagenumbering{gobble} % Removes the page numbers from pages from here on out
+	\maketitle % This actually creates the title page
+	\newpage % This creates a new page
+	Hello World! 
+	\pagenumbering{arabic} % Starts page numbering again in arabic numerals
+\end{document}

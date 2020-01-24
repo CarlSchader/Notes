@@ -1,0 +1,58 @@
+\documentclass{article}
+\title{Table of Contents Example}
+\date{1/24/2020}
+\author{Carl Schader}
+
+% \setcounter{tocdepth}{0} % Show nothing 
+\setcounter{tocdepth}{1} % Show sections
+% \setcounter{tocdepth}{2} % + subsections
+% \setcounter{tocdepth}{3} % + subsubsections
+% \setcounter{tocdepth}{4} % + paragraphs
+% \setcounter{tocdepth}{5} % + subparagraphs
+
+\usepackage{setspace} % package for changing the spacing of your document. We use it here for the table of contents.
+
+\begin{document}
+	\maketitle
+	Remember to compile twice.
+	\pagenumbering{gobble}
+	\doublespacing
+	\tableofcontents % This will create a table of contents but REQUIRES TWO COMPILIATIONS!!!
+
+	\newpage
+	\singlespacing
+	\pagenumbering{arabic}
+	\section{Dogs}
+	Dogs are cute.
+	\subsection{Puppies}
+	Puppies are the penultimate of cutenenss.
+
+	\newpage
+	\addtocontents{toc}{\setcounter{tocdepth}{2}} % You can set the tocdepth for individual sections too with this.
+	\section{Cats}
+	Cats are meh.
+	\subsection{Kittens}
+	While cats may be meh, kittens beat out doggos in cuteness.
+
+	\begin{figure}[h!]
+		\caption{figure 1}
+	\end{figure}
+	\begin{figure}[h!]
+		\caption{figure 2}
+	\end{figure}
+
+	\begin{table}[h!]
+		\caption{table 1}
+	\end{table}
+
+	\begin{table}[h!]
+		\caption{table 2}
+	\end{table}
+
+	\newpage % This block makes an appendix and puts a list of all the dummy figures and tables in it.
+	\begin{appendix}
+		\listoffigures
+		\listoftables
+	\end{appendix}
+
+\end{document}
