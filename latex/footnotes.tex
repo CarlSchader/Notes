@@ -1,0 +1,9 @@
+\documentclass{article}
+\title{Footnotes}
+\date{1/24/2020}
+\author{Carl Schader}
+
+\begin{document}
+	Blah blah blah\footnote{\label{myFootnote}I am a footnote}.\\ % Make sure \label is in the footnote or else it will be labeling the section it's in instead.
+	I'm referring to footnote \ref{myFootnote}
+\end{document}

@@ -1,0 +1,17 @@
+\documentclass{article}
+\title{Bibliography}
+\date{1/24/2020}
+\author{Carl Schader}
+
+\begin{document}
+	\maketitle
+	Make sure to run...\\
+	pdflatex latexfile.tex\\
+	bibtex latexfile.aux\\
+	pdflatex latexfile.tex\\
+	pdflatex latexfile.tex\\
+	I'm a citation \cite{DUMMY:1} embedded in text.
+
+	\bibliography{dummy} % path to .bib file DO NOT GIVE .bib EXTENSION
+	\bibliographystyle{ieeetr} % bibliographic style (ex. IEEE)
+\end{document}
