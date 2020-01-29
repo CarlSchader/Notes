@@ -1,0 +1,111 @@
+\documentclass{article}
+\title{Functions on Euclidean Space}
+\author{Carl Schader}
+\date{}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\newpage
+	
+	\section{Norm and Inner Product}
+
+	\subsection{Euclidean n-space $\mathbf{R^n}$}
+	$\mathbf{R^n}$ is the set of all vectors or n-tuples
+	\begin{equation*}
+		\vec{x} = \left<x_1, ..., x_n\right> = 
+		\left[\begin{matrix}
+			x_1\\
+			...\\
+			x_n
+		\end{matrix}\right]
+	\end{equation*}
+	where $x_i$ is a 1-tuple in $\mathbf{R} = \mathbf{R}$.
+
+	\subsection{Vectors}
+	Addition of vectors:
+	\begin{equation*}
+		\vec{x} + \vec{y} = \left<x_1 + y_1, ..., x_n + y_n\right> = 
+		\left[\begin{matrix}
+			x_1 + y_1\\
+			...\\
+			x_n + y_n
+		\end{matrix}\right]
+	\end{equation*}
+	Scalar multiple of a vector:
+	\begin{equation*}
+		a\vec{x} = \left<ax_1, ..., ax_n\right> =
+		\left[\begin{matrix}
+			ax_1\\
+			...\\
+			ax_n
+		\end{matrix}\right]
+	\end{equation*}
+	Norm (magnitude) of a vector:
+	\begin{equation*}
+		\lVert\vec{x}\rVert = \sqrt{x_1^2 +, ..., + x_n^2}
+	\end{equation*}	
+	
+	\subsubsection{Properties of Vectors}
+	\begin{enumerate}
+		\item $\lVert\vec{x}\rVert \geq 0$, and $\lVert\vec{x}\rVert = 0$ if and only if $\vec{x} = \vec{0}$.
+		
+		\item $\left| \sum_{i=1}^n x_iy_i\right| \leq \lVert\vec{x}\rVert \cdot \lVert\vec{y}\rVert$; equality holds if and only if $\vec{x}$ and $\vec{y}$ are linearly dependent, meaning $\vec{x} = \lambda\vec{y}$. (The value of the inner/dot product is $\leq$ the product of the magnitudes.)
+		
+		\item $\lVert\vec{x} + \vec{y}\rVert \leq \lVert\vec{x}\rVert + \lVert\vec{y}\rVert$. (Triangle Inequality)
+		
+		\item $\lVert a\vec{x}\rVert = \left|a\right| \cdot \lVert\vec{x}\rVert$.
+	\end{enumerate}
+		
+	\subsection{Inner Product}
+	\begin{equation*}
+		\left<\vec{x},\vec{y}\right> = \vec{x}\bullet\vec{y} = \sum_{i=1}^n x_iy_i = 
+		\left[\begin{matrix}
+			x_i & ... & x_n
+		\end{matrix}\right]
+		\left[\begin{matrix}
+			y_i\\
+			...\\
+			y_n
+		\end{matrix}\right]
+	\end{equation*}
+	
+	\subsubsection{Inner Product Properties}
+	\begin{enumerate}
+		\item \begin{align*}
+			\vec{x}\bullet\vec{y} = \vec{y}\bullet\vec{x} && \text{(symmetry).}
+		\end{align*}
+		
+		\item 
+		\begin{align*}
+		\left( a\vec{x} \right) \bullet \vec{y} &= \vec{x} \bullet \left( a\vec{y}\right) = a\left(\vec{x}\bullet\vec{y}\right) && \text{(bilinearity).}\\
+		\left( \vec{x_1} + \vec{x_2}\right) \bullet \vec{y} &= \left(\vec{x_1}\bullet\vec{y}\right) + \left(\vec{x_2}\bullet\vec{y}\right) && \text{(distributive).}\\
+		\end{align*}
+		
+		\item $\vec{x}\bullet\vec{x} \geq 0$, and $\vec{x}\bullet\vec{x}=0$ if and only if $\vec{x} = \vec{0}$ (positive definiteness).
+		
+		\item \begin{align*}
+		\lVert\vec{x}\rVert &= \sqrt{\vec{x}\bullet\vec{x}}.\\
+		\lVert\vec{x}\rVert^2 &= \vec{x}\bullet\vec{x}.
+		\end{align*}
+		
+		\item \begin{align*}
+		\vec{x}\bullet\vec{y} = \frac{\lVert\vec{x}+\vec{y}\rVert^2 - \lVert\vec{x}-\vec{y}\rVert^2}{4} && \text{(polarization identity).}
+		\end{align*}
+	\end{enumerate}
+	
+	\subsection{Notation Remarks}
+	\begin{itemize}
+		\item The zero vector $\vec{0} = \left<0, ..., 0\right>$.
+		\item The usual basis of $\mathbf{R^n}$ is $\vec{e_1}, ..., \vec{e_n}$ where
+		\begin{equation*}
+			e_i = \left<0, ..., 1, ..., 0\right>
+		\end{equation*}
+		and the 1 is at the ith position in $e_i$.
+	\end{itemize}
+	\newpage
+	
+\end{document}

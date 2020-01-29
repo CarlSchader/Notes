@@ -1,0 +1,4 @@
+\contentsline {section}{\numberline {1}Indirect (Brittish Model)}{1}
+\contentsline {section}{\numberline {2}Direct (French)}{1}
+\contentsline {section}{\numberline {3}Company (Belgian)}{2}
+\contentsline {section}{\numberline {4}Indirect Company (Brittish Variant)}{2}
