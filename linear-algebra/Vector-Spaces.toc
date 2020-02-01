@@ -1,0 +1,31 @@
+\contentsline {section}{\numberline {1}$\mathbf {R}^n$ and $\mathbf {C}^n$}{2}
+\contentsline {subsection}{\numberline {1.1}Complex Numbers}{2}
+\contentsline {subsubsection}{\numberline {1.1.1}Definition of Complex Numbers}{2}
+\contentsline {subsubsection}{\numberline {1.1.2}Properties of Complex Arithmetic}{2}
+\contentsline {subsubsection}{\numberline {1.1.3}Subtraction and Division of Complex Numbers}{3}
+\contentsline {subsubsection}{\numberline {1.1.4}Notation $\mathbf {F}$}{3}
+\contentsline {subsection}{\numberline {1.2}Lists}{3}
+\contentsline {subsubsection}{\numberline {1.2.1}Definition of Lists}{3}
+\contentsline {subsubsection}{\numberline {1.2.2}Definition of $\mathbf {F}^n$}{3}
+\contentsline {subsubsection}{\numberline {1.2.3}Addition in $\mathbf {F}^n$}{4}
+\contentsline {subsubsection}{\numberline {1.2.4}Commutativity of Addition in $\mathbf {F}^n$}{4}
+\contentsline {subsubsection}{\numberline {1.2.5}Definition of the $0$ List}{4}
+\contentsline {subsubsection}{\numberline {1.2.6}Geometric Interpretation of Vectors}{4}
+\contentsline {subsubsection}{\numberline {1.2.7}Additive Inverse in $\mathbf {F}^n$}{5}
+\contentsline {subsubsection}{\numberline {1.2.8}Scalar Multiplication in $\mathbf {F}^n$}{6}
+\contentsline {section}{\numberline {2}Definition of Vector Space}{6}
+\contentsline {subsection}{\numberline {2.1}Addition and Scalar Multiplication on a Set}{6}
+\contentsline {subsection}{\numberline {2.2}Vector Space}{6}
+\contentsline {subsection}{\numberline {2.3}Real Vector Space vs. Complex Vector Space}{7}
+\contentsline {subsection}{\numberline {2.4}$\mathbf {F}^S$}{7}
+\contentsline {section}{\numberline {3}Subspaces}{7}
+\contentsline {subsection}{\numberline {3.1}Definition Subspace}{7}
+\contentsline {subsection}{\numberline {3.2}Conditions for a Subspace}{8}
+\contentsline {subsection}{\numberline {3.3}Subspaces of $\mathbf {R}^2$}{8}
+\contentsline {subsection}{\numberline {3.4}Sums of Subspaces}{8}
+\contentsline {subsubsection}{\numberline {3.4.1}Sum of Subsets}{8}
+\contentsline {subsubsection}{\numberline {3.4.2}Sum of Subspaces is the Smallest Containing Subspace}{8}
+\contentsline {subsection}{\numberline {3.5}Direct Sums}{8}
+\contentsline {subsubsection}{\numberline {3.5.1}Definition Direct Sum}{8}
+\contentsline {subsubsection}{\numberline {3.5.2}Condition for a Direct Sum}{9}
+\contentsline {subsubsection}{\numberline {3.5.3}Direct Sum of Two Subspaces}{9}
